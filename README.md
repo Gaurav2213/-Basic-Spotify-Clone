@@ -6,7 +6,7 @@
 
 ## 📸 Preview
 
-![Vibrant Media Player UI](HomePage.png)
+![Vibrant Media Player UI](./Music-Player/HomePage.png)
 
 ---
 
