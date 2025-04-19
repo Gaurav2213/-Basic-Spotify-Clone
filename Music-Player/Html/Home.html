@@ -1,0 +1,194 @@
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content=" width=device-width ,initial-scale=1.0">
+        <link href="Style.css" rel="stylesheet" type="text/css">
+        <link href="Utility.css" rel="stylesheet" type="text/css">
+        <!-- Javascript file -->
+        <script src="script.js"></script>
+        <title>Vibrant Media Player</title>
+        <link rel="icon" type="image/x-icon" href="tabIcon.svg">
+    </head>
+
+    <body>
+        <!--Div main container-->
+        <div class="container flex">
+            <!-- div main left conatiner-->
+            <div class="left border bg-black">
+                <div class="close">
+                    <img class="invert" src="close.svg" alt="">
+                </div>
+                <!-- home section at top-->
+                <div class="home bg-grey rounded m-1 p-1">
+                    <div class="icon">
+                        <img src="https://cdn-icons-png.flaticon.com/128/7566/7566380.png" loading="lazy" alt="Music "
+                        title="Music " width="64" height="64">
+                        <h2>Vibrant</h2>
+                    </div>
+                    
+                    <ul>
+                        <li> <img class="invert" src="home.svg" alt="Home"> Home</li>
+                    </ul>
+                    <ul>
+                        <li> <img class="invert" src="search.svg" alt=" search"> search</li>
+                    </ul>
+                </div>
+                <!-- library section at bottom-->
+                <div class="library bg-grey rounded m-1 p-1">
+                    <div class="heading">
+                        <img class="invert" src="your_palylist.svg" alt="library-logo">
+                        <h3 class="h2">Your Library</h3>
+                    </div>
+
+                    <!--Song list under library section-->
+                    <div class="songLists">
+                        <ul>
+                            <li>
+                                <img src="music.svg" class="invert" alt="">
+                                <div class="info">
+                                    <div>Song Name</div>
+                                    <div>Artist</div>
+
+                                </div>
+                                <div class="playnow">
+                                    <span>Play Now</span>
+                                    <img src="play.svg" alt="">
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- library footer links-->
+                    <div class="footer">
+                        <div><a href="https://www.spotify.com/jp/legal/"><span>Legal</span></a></div>
+                        <div><a href="https://www.spotify.com/jp/privacy/"><span>Privacy</span></a></div>
+                        <div><a href="https://www.spotify.com/jp/privacy-policy/"><span> Privacy-Policy</span></a></div>
+                        <div><a href="https://www.spotify.com/jp/Cookies/"><span>Cookies</span></a></div>
+                        <div><a href="https://www.spotify.com/jp/Accessibilty/"><span>Accessibilty</span></a></div>
+                    </div>
+                </div>
+            </div>
+            <!-- div main right container -->
+            <div class="right bg-grey rounded ">
+                <!-- header with sign arrows  and signup login-->
+                <div class="header">
+                    <div class="nav">
+                        <div class="hamburgerContainer">
+
+                            <img class="invert hamburger" src="hamburger.svg" alt="">
+
+
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                                color="#ffffff" fill="none">
+                                <path d="M15 6C15 6 9.00001 10.4189 9 12C8.99999 13.5812 15 18 15 18" stroke="currentColor"
+                                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                                color="#ffffff" fill="none">
+                                <path d="M9.00005 6C9.00005 6 15 10.4189 15 12C15 13.5812 9 18 9 18" stroke="currentColor"
+                                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="button">
+                        <button class="signupbtn"><a href="SignUp.html">Sign up</a></button>
+                        <button class="signupbtn"><a href="Login.html">Login</a> </button>
+                    </div>
+                </div>
+                <!-- playlist section start from here -->
+                <div class="spotifyPlaylist">
+                    <h2>Music Playlists</h2>
+                    <!--card conatiner start from here-->
+                    <div class="cardContainer">
+                        <!-- 1st card -->
+                        <div data-folder="Songs" class="card">
+                            <div  class="play">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="40" height="40"
+                                    color="#1fdf64" fill="black">
+                                    <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5" />
+                                    <path
+                                        d="M15.4531 12.3948C15.3016 13.0215 14.5857 13.4644 13.1539 14.3502C11.7697 15.2064 11.0777 15.6346 10.5199 15.4625C10.2893 15.3913 10.0793 15.2562 9.90982 15.07C9.5 14.6198 9.5 13.7465 9.5 12C9.5 10.2535 9.5 9.38018 9.90982 8.92995C10.0793 8.74381 10.2893 8.60868 10.5199 8.53753C11.0777 8.36544 11.7697 8.79357 13.1539 9.64983C14.5857 10.5356 15.3016 10.9785 15.4531 11.6052C15.5156 11.8639 15.5156 12.1361 15.4531 12.3948Z"
+                                        stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <img src="images/happyhits.jpg" alt="happy playlist">
+                            <div class="playlisttitle">
+                                <h2>Happy Hits!</h2>
+                                <p>Hits to boost your mood and fill you with happiness!</p>
+                            </div>
+                        </div>
+
+                        <div data-folder="Songs3" class="card">
+                            <div  class="play">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="40" height="40"
+                                    color="#1fdf64" fill="black">
+                                    <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5" />
+                                    <path
+                                        d="M15.4531 12.3948C15.3016 13.0215 14.5857 13.4644 13.1539 14.3502C11.7697 15.2064 11.0777 15.6346 10.5199 15.4625C10.2893 15.3913 10.0793 15.2562 9.90982 15.07C9.5 14.6198 9.5 13.7465 9.5 12C9.5 10.2535 9.5 9.38018 9.90982 8.92995C10.0793 8.74381 10.2893 8.60868 10.5199 8.53753C11.0777 8.36544 11.7697 8.79357 13.1539 9.64983C14.5857 10.5356 15.3016 10.9785 15.4531 11.6052C15.5156 11.8639 15.5156 12.1361 15.4531 12.3948Z"
+                                        stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <img src="images/happyhits.jpg" alt="happy playlist">
+                            <div class="playlisttitle">
+                                <h2>Happy Hits!</h2>
+                                <p>Hits to boost your mood and fill you with happiness!</p>
+                            </div>
+
+                        </div>
+
+                        <div data-folder="Songs2" class="card">
+                            <div  class="play">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="40" height="40"
+                                    color="#1fdf64" fill="black">
+                                    <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5" />
+                                    <path
+                                        d="M15.4531 12.3948C15.3016 13.0215 14.5857 13.4644 13.1539 14.3502C11.7697 15.2064 11.0777 15.6346 10.5199 15.4625C10.2893 15.3913 10.0793 15.2562 9.90982 15.07C9.5 14.6198 9.5 13.7465 9.5 12C9.5 10.2535 9.5 9.38018 9.90982 8.92995C10.0793 8.74381 10.2893 8.60868 10.5199 8.53753C11.0777 8.36544 11.7697 8.79357 13.1539 9.64983C14.5857 10.5356 15.3016 10.9785 15.4531 11.6052C15.5156 11.8639 15.5156 12.1361 15.4531 12.3948Z"
+                                        stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <img src="images/happyhits.jpg" alt="happy playlist">
+                            <div class="playlisttitle">
+                                <h2>Happy Hits!</h2>
+                                <p>Hits to boost your mood and fill you with happiness!</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="playbar">
+                    <div class="seekbar">
+                        <div class="circle">
+                        </div>
+
+                    </div>
+                    <div class="aboveBar">
+                        <div class="songInfo"></div>
+                        <div class="songbuttons">
+                            <img id="previous" src="prevSong.svg" alt="prevsong">
+                            <img id="play" src="play.svg" alt="playsong">
+                            <img id="next" src="nextSong.svg" alt="nextsong">
+                        </div>
+                        <div class="timevol">
+
+
+                            <div class="songTime">
+
+                            </div>
+                            <div class="Volume">
+                                <img class="invert" width="20px" src="volume.svg" alt="">
+                                <div class="range">
+                                    <input width="10px" type="range" name="volume" id="">
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </body>
+
+    </html>

@@ -1,0 +1,92 @@
+/* Base styles */
+body {
+    background-color:black;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  .signup-box, .login-box {
+    width: 90%; /* Adjust the width to your liking */
+    max-width: 360px; /* Set a maximum width for larger screens */
+    margin: auto;
+    background-color: white;
+    border-radius: 3px;
+    padding: 20px; /* Add padding for better spacing */
+    box-sizing: border-box; /* Ensure padding is included in width calculation */
+  }
+  
+  h1 {
+    text-align: center;
+    padding-top: 15px;
+  }
+  
+  h4 {
+    text-align: center;
+  }
+  
+  form {
+    width: 100%; /* Take full width of the container */
+  }
+  
+  form label {
+    display: block;
+    margin-top: 20px;
+    font-size: 18px;
+  }
+  
+  form input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgb(164, 87, 87);
+    border-radius: 6px;
+    margin-top: 5px;
+    box-sizing: border-box;
+  }
+  
+  input[type="button"] {
+    width: 100%;
+    height: 40px;
+    margin-top: 20px;
+    border: none;
+    background-color: #49c1a2;
+    color: white;
+    font-size: 18px;
+  }
+  
+  p {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 15px;
+  }
+  
+  .para-2 {
+    text-align: center;
+    color: white;
+    font-size: 15px;
+    margin-top: -10px;
+  }
+  
+  .para-2 a {
+    color: #49c1a2;
+  }
+  .login{
+    cursor: pointer;
+  }
+  
+  /* Media Queries for responsiveness */
+  @media (min-width: 600px) {
+    .signup-box, .login-box {
+      width: 50%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .signup-box, .login-box {
+      width: 40%;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .signup-box, .login-box {
+      width: 360%; /* Reset to original width on larger screens */
+    }
+  }
